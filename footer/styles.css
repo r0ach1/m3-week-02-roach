@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+*{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.footer{
+    padding: 150px 0 0 0;
+	background: linear-gradient(-20deg,#3f5494,#08c7a5); 
+}
+
+.footer .container{
+    display:flex;
+    width: 1200px;
+    margin:auto;
+}
+
+.item {
+    width: 0;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+.item h4, .subs h4{
+    font-size: 24px;
+	color: #fff;
+	border-bottom: 1px dotted #fff;
+	margin-bottom: .5em;
+	padding-bottom: .5em;
+}
+
+.item nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.item nav a{
+    color: #fff;
+	line-height: 1.4;
+	text-decoration: none;
+	padding: 5px 0;
+    position: relative;
+}
+
+.item nav a:hover{
+    color: #fa0
+}
+.item nav a::after{
+    content: '';
+	position: absolute;
+    left: 0;
+	right: 100%;
+	bottom: -3px;
+	border-bottom: 2px solid #fff;
+    transition: .3s;
+}
+.item nav a:hover:after{
+    right: 4em;
+}
+.subs{
+    display: flex;
+    flex-direction: column;
+}
+
+.subs form{
+    display: flex;
+    width: 100%;
+    margin: auto 0px;
+}
+
+.subs input[type="text"], .sub input[type="submit"]{
+    border: none;
+    padding: 5px 10px;
+}
+
+.subs input[type="text"]{
+    width: 50px;
+	flex-grow: 1;
+}
+
+.subs input[type="submit"]{
+    color: #70f6df;
+	background-color: #3e5293;
+}
+
+.copyright{
+	width: 100%;
+	text-align: center;
+	margin: 150px 0 0 ;
+	padding: 10px 0px;
+	background-color: #3e5293;
+	color: #70f6df;
+}
